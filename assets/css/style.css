@@ -1,0 +1,49 @@
+/*		Spoiler
+---------------------------------------------------------------*/
+
+.su-spoiler {}
+.su-spoiler .su-spoiler:last-child { margin-bottom: 0; }
+.su-spoiler-title {
+	position: relative;
+	cursor: pointer;
+}
+.su-spoiler-content {
+	-webkit-transition: padding-top .2s;
+	-moz-transition: padding-top .2s;
+	-o-transition: padding-top .2s;
+	transition: padding-top .2s;
+	-ie-transition: padding-top .2s;
+}
+.su-spoiler.su-spoiler-closed > .su-spoiler-content {
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: none;
+	opacity: 0;
+}
+.su-spoiler-style-default { margin-bottom: 1.5em; }
+.su-spoiler-style-default > .su-spoiler-title {
+	min-height: 16px;
+	padding: 4px 0 4px 24px;
+	background: #fff;
+	color: #333;
+	font-weight: bold;
+	line-height: 16px;
+}
+.su-spoiler-style-default > .su-spoiler-title > .su-spoiler-icon {
+	position: absolute;
+	top: 4px;
+	left: 0;
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: 0 -16px url('../images/spoiler.png') no-repeat;
+}
+.su-spoiler-style-default.su-spoiler-closed > .su-spoiler-title > .su-spoiler-icon { background: 0 0 url('../images/spoiler.png') no-repeat; }
+.su-spoiler-style-default > .su-spoiler-content {
+	padding: 1em 0 0 24px;
+	background: #fff;
+	color: #333;
+}
